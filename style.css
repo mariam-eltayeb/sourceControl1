@@ -1,0 +1,40 @@
+.container{
+    display: grid;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    height: 250px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    grid-template-areas: "header header header header header header header header"
+    "nav nav main main main main aside aside"
+    "nav nav main main main main aside aside"
+    "nav nav main main main main aside aside"
+    "nav nav main main main main aside aside"
+    "nav nav main main main main aside aside"
+
+    "footer footer footer footer footer footer footer footer";
+}
+header,footer {
+    background-color: rgba(0, 0, 255, 0.478);
+    
+}
+header {
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+nav, aside {
+    background-color: rgba(165, 89, 42, 0.519);
+}
+nav{
+    grid-area: nav;
+}
+aside {
+    grid-area: aside;
+}
+main{
+    background-color: aquamarine;
+    grid-area: main;
+}
